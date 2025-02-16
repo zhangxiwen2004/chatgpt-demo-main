@@ -1,0 +1,14 @@
+.markdown-body {
+  padding: 20rpx;
+}
+
+.loading-icon {
+  text-align: center;
+}
+
+.mermaid-container {
+  overflow: auto;
+  cursor: pointer;
+}
+
+/* 可以从原来的样式文件中导入其他必要的样式 */ 

@@ -1,0 +1,18 @@
+<view class="markdown-body" style="font-size: {{fontSize}}px" bindcontextmenu="onContextMenu" bindtap="onTap">
+  <block wx:if="{{loading}}">
+    <view class="loading-icon">
+      <image src="../../icons/three-dots.svg"></image>
+    </view>
+  </block>
+  <block wx:else>
+    <!-- Markdown 内容渲染区域 -->
+    <rich-text nodes="{{nodes}}"></rich-text>
+    
+    <!-- Mermaid 图表渲染区域 -->
+    <block wx:if="{{mermaidCode}}">
+      <view class="mermaid-container" bindtap="viewMermaidImage">
+        <image src="{{mermaidSvgUrl}}" mode="widthFix"></image>
+      </view>
+    </block>
+  </block>
+</view> 

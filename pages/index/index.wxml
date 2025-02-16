@@ -1,0 +1,5 @@
+<markdown 
+  content="{{markdownContent}}"
+  loading="{{isLoading}}"
+  fontSize="{{14}}"
+/> 
