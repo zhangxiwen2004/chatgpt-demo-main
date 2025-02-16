@@ -109,7 +109,7 @@ export const useAccessStore = createPersistStore(
             defaultModel !== "" ? defaultModel : "gpt-3.5-turbo";
           return res;
         })
-        .then((res: DangerConfig) => {
+        .then((res: object) => {
           console.log("[Config] got config from server", res);
           set(() => ({ ...res }));
         })
